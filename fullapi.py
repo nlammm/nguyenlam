@@ -19,7 +19,7 @@ from fastapi import FastAPI
 # os.systen('pip install pydantic')
 app = FastAPI()
 
-@app.post("/apishare")
+@app.get("/apishare")
 async def apishare(cookie:str, idpost:str, message):
     headers = {
         'authority': 'mbasic.facebook.com',
