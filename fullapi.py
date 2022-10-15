@@ -83,5 +83,3 @@ async def apishare(cookie:str, idpost:str, message):
         else:
             data = {'status':'success','message':'Share Post Thành Công'}
             return data
-if __name__=='__main__':
-    os.system('uvicorn apii:app --reload')
